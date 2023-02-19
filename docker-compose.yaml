@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: learn-rust
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    container_name: learn-rust
+    working_dir: /src
+    volumes:
+      - .:/src
+    networks:
+      - learn_rust
+    entrypoint: /bin/sh
+
+networks:
+  learn_rust:
+    driver: bridge
