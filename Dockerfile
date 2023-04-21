@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM rust:1.69.0-alpine
 
 ENV PYTHONUNBUFFERED=1
 
@@ -19,8 +19,7 @@ RUN apk update && apk add --no-cache \
     python3 \
     gcc \
     musl-dev \
-    rust \
-    cargo
+    ca-certificates
 
 COPY . /src
 
