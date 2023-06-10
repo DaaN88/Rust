@@ -3,3 +3,5 @@
 .env
 /guessing_game/target/*
 /hello_cargo/target/*
+/debug
+/target
