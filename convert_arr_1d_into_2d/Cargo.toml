@@ -1,0 +1,6 @@
+[package]
+name = "convert_arr_1d_into_2d"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
